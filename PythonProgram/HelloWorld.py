@@ -10,4 +10,5 @@ name = "Tongyang Ni"
 action = "love"
 lover = "Tianqi Chen"
 print(name + " " + action + " " + lover)
-
+yourName = input("What is your name: ")
+print("My name is" + yourName)
