@@ -11,4 +11,15 @@ action = "love"
 lover = "Tianqi Chen"
 print(name + " " + action + " " + lover)
 yourName = input("What is your name: ")
-print("My name is" + yourName)
+print("My name is " + yourName)
+# This is just comment, and this will not display on the console
+a = 12
+b = 3
+print(a + b)
+print(a - b)
+# In the python3, the division operator will be the result of a float automatically
+print(a / b)
+print(a // b)
+print(a * b)
+print(a % b)
+
