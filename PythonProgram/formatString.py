@@ -30,3 +30,6 @@ for i in range(1, 11):
     print("No. {0:<2} squared is {1:<4} and cubed is {2:<4}".format(i, i**2, i**3))
 
 print("Pi is approximately {0:12.50}".format(22/7))
+#if the string just use once as ordered, we can ignore the numbers in the curly brace
+for i in range(1, 11):
+    print("No. {:2} squared is {:4} and cubed is {:4}".format(i, i**2, i**3))
