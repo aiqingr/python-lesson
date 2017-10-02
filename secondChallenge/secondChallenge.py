@@ -25,11 +25,22 @@
 # you could use other techniques (such as splitting the string up), that's not the
 # approach we're looking for here.
 
-ipAddress = input("Please enter an Ip address: ")
-
+ipAddress = input("Please enter an Ip address. An IP address consist of 4 numbers, "
+				  "separated from each other with a full stop:")
+if ipAddress[-1] != ".":
+    ipAddress += "."
 segment = 1
 segment_length = 0
+# character = ""
 
 for character in ipAddress:
-	if character == '.':
-		print("segment {} contain")
+	if character == ".":
+		print("segment {} contain {} characters".format(segment, segment_length))
+		segment += 1
+		segment_length = 0
+	else:
+		segment_length +=1
+
+# unless the final character in the string was a . then we haven't printed the last segment
+# if character != ".":
+# 	print("segment {} contains {} characters".format(segment, segment_length))
