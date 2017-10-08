@@ -1,0 +1,11 @@
+# Create a list of items (you may use either strings or numbers in the list)
+# then create an iterators using the iter() function.
+#
+# Use a for loop to loop "n" times, where n is the number of items in your lists.
+# Each tie round the loop, use next() on your list to print the next item.
+#
+# hint: use the len() function rather than counting the number of items in the lists.
+my_list = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+
+my_iterator = iter(my_list)
+

@@ -20,3 +20,6 @@ print(next(my_iterator))
 print(next(my_iterator))
 # the line 22 will be an error, if we cancel the comment of line 22
 # print(next(my_iterator))
+
+for char in iter(string):
+    print(char)
