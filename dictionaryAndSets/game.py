@@ -21,11 +21,22 @@ exits = {0: {"Q": 0},
          4: {"N": 1, "W": 2, "Q": 0},
          5: {"W": 2, "S": 1, "Q": 0}}
 
+nameExits = {1: {"2": 2, "3": 3, "4": 4, "5": 5},
+             2: {"5": 5},
+             3: {"1": 1},
+             4: {"1": 1, "2": 2},
+             5: {"2": 2, "1": 1}}
+
 vocabulary = {"QUIT": "Q",
               "NORTH": "N",
               "SOUTH": "S",
               "EAST": "E",
-              "WEST": "W"}
+              "WEST": "W",
+              "ROAD": "1",
+              "HILL": "2",
+              "BUILDING": "3",
+              "VALLEY": "4",
+              "FOREST": "5"}
 
 # print(locations[0].split())
 # print(locations[3].split())
@@ -37,7 +48,9 @@ while True:
 
     if loc == 0:
         break
-
+    else:
+        allExits = exits[loc].copy()
+        allExits.update(nameExits[loc])
     direction = input("Available exists are " + availableExits).upper()
     print()
     # Parse the user input, using our vocabulary dictionary if necessary
@@ -47,7 +60,7 @@ while True:
             if word in vocabulary:
                 direction = vocabulary[word]
 
-    if direction in exits[loc]:
-        loc = exits[loc][direction]
+    if direction in allExits:
+        loc = allExits[direction]
     else:
         print("You cannot go in that direction")
