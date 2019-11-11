@@ -11,3 +11,7 @@ for numer in [12, 3, 14, 15]:
 
 def add(x, y):
     pass
+
+
+def subtract(x, y):
+    pass
