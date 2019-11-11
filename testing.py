@@ -15,3 +15,7 @@ def add(x, y):
 
 def subtract(x, y):
     pass
+
+
+def divided(x, y):
+    pass
