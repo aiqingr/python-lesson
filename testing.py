@@ -9,9 +9,5 @@ for numer in [12, 3, 14, 15]:
     print(numer)
 
 
-class ClassName(object):
-    """docstring for ClassName"""
-
-    def __init__(self, arg):
-        super(ClassName, self).__init__()
-        self.arg = arg
+def add(x, y):
+    pass
