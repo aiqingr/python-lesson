@@ -19,3 +19,7 @@ def subtract(x, y):
 
 def divided(x, y):
     pass
+
+
+def square(a, b):
+    pass
