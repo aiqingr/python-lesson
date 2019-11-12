@@ -23,3 +23,6 @@ def divided(x, y):
 
 def square(a, b):
     pass
+
+
+testString = [1, 2, 3, 4]
